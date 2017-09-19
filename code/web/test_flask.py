@@ -18,7 +18,8 @@ def login():
 
 @app.route('/login', methods = ['POST'])
 def login_check():
-	if request.form['username']=='admin' and request.form['password']=='password':
+	if request.form['username']=='admin'\
+			and request.form['password']=='password':
 		return '<h3>Hello admin!</h3>'
 	return redirect(url_for('error'))
 
