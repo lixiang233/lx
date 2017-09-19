@@ -5,7 +5,6 @@ app = Flask(__name__)
 
 @app.route('/', methods = ['GET', 'POST'])
 def home():
-#	return redirect(url_for('login'))
 	return '<h1>Home</h1>'
 
 @app.route('/login', methods = ['GET'])
@@ -28,4 +27,4 @@ def error():
 	return '<h1>ERROR</h1>'
 
 if __name__=='__main__':
-	app.run(debug = True)
+	app.run()
